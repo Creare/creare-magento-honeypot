@@ -1,0 +1,3 @@
+<?php if (Mage::getStoreConfig('contacts/honeypot/enabled')) : ?>
+<script type="text/javascript">var field = new Honeypotfield('<?php echo Mage::getStoreConfig('contacts/honeypot/field_name') ?>', '<?php echo Mage::getStoreConfig('contacts/honeypot/class') ?>');</script>
+<?php endif ?>

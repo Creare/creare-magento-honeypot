@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <contacts_index_index>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/creare/honeypot.js</name>
+            </action>
+            <action method="addCss">
+                <stylesheet>css/creare/honeypot.css</stylesheet>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" name="honeypot" template="creare/contacts/honeypot.phtml" after="-" />
+        </reference>
+    </contacts_index_index>
+</layout>

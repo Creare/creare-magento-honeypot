@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Creare_Honeypot>
+            <codePool>community</codePool>
+            <active>true</active>
+        </Creare_Honeypot>
+    </modules>
+</config>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Creare_Honeypot>
+            <version>0.1.0</version>
+        </Creare_Honeypot>
+    </modules>
+    <global>
+        <models>
+            <honeypot>
+                <class>Creare_Honeypot_Model</class>
+            </honeypot>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <contacts>
+                <args>
+                    <modules>
+                        <creare_honeypot before="Mage_Contacts">Creare_Honeypot_Contacts</creare_honeypot>
+                    </modules>
+                </args>
+            </contacts>
+        </routers>
+        <layout>
+            <updates>
+                <honeypot>
+                    <file>creare/honeypot.xml</file>
+                </honeypot>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <contacts>
+            <honeypot>
+                <enabled>1</enabled>
+                <field_name>url</field_name>
+                <class>chp_field_hide</class>
+            </honeypot>
+        </contacts>
+    </default>
+</config>
